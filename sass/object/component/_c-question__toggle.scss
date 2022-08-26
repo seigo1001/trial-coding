@@ -1,0 +1,45 @@
+.c-question__toggle{
+    width: rem(22);
+    height: rem(22);
+}
+.c-question__toggle::before{
+    content: '';
+    position: absolute;
+    width: rem(15);
+    height: rem(1);
+    top: 45%;
+    right: rem(15);
+    background-color: #333333;
+    transition: .4s;
+    @include mq(tab){
+        width: rem(22);
+        height: rem(1);
+        right: rem(40);
+    }
+}
+.c-question__toggle::after{
+    content: '';
+    position: absolute;
+    width: rem(15);
+    height: rem(1);
+    top: 45%;
+    right: rem(15);
+    background-color: #333333;
+    transform: rotate(90deg);
+    transition: .4s;
+    @include mq(tab){
+        width: rem(22);
+        height: rem(1);
+        right: rem(40);
+    }
+
+}
+.open .c-question__toggle::before{
+    transform: rotate(270deg);
+    transition: .4s;
+    opacity: 0;
+}
+.open .c-question__toggle::after{
+    transform: rotate(360deg);
+    transition: .4s;
+}

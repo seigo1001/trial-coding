@@ -1,0 +1,14 @@
+.c-answer{
+    display: none;
+    text-align: left;
+    background-color: $white;
+    padding-left: rem(20);
+    padding-bottom: rem(10);
+    @include mq(tab){
+        padding-left: rem(40);
+    }
+}
+.c-answer__wrap{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+  <body>
+    <%var questionArr = [
+    '大体の見積り金額を電話で教えてもらえますか？',
+    'もともと貼ってあるフィルムはいくらで剥がしてもらえますか？',
+    '途中でキャンセルもしくはフィルムの変更は可能ですか？',
+    '土日祝日でも施工していますか？',
+    '引越後でもガラスフィルムの施工は可能ですか？',
+    '現物サンプルを見たい時にはどうすれば良いですか？'
+    ]; %>
+    
+    <div class="p-container l-inner">
+      
+      <section class="p-qanda">
+        <%- include('./parts/_c-section-title',{text:'Q&A', subtitle:'よくある質問'}) %>
+        
+        <div class="p-qanda__body">
+          <% questionArr.forEach(function (value, key){ %>
+            <%- include('./parts/_c-qanda',{text:value}) %>
+          <% }); %>
+        </div>
+  
+        <%- include('./parts/_c-btn',{text:'Q&A', link:'#'}) %>
+  
+      </section>
+
+    </div>
+    
+  </body>
+</html>

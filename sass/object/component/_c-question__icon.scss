@@ -1,0 +1,9 @@
+.c-question__icon{
+    color: $base-color;
+    font-size: rem(24);
+    font-weight: 500;
+    margin-right: rem(20);
+    @include mq(tab){
+        font-size: rem(28);
+    }
+}

@@ -1,0 +1,10 @@
+.c-answer__body{
+    font-size: rem(12);
+    padding-right: rem(30);
+    @media screen and (min-width: 500px){
+        font-size: calc(15/500*100vw);
+    }
+    @include mq(tab){
+        font-size: rem(20);
+    }
+}

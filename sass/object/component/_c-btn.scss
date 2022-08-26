@@ -1,0 +1,23 @@
+.c-btn {
+  display: inline-block;
+  max-width: rem(290);
+  width: 90%;
+  padding: rem(13) rem(65) rem(17) rem(95);
+  background-color: $base-color;
+  color: white;
+  letter-spacing: rem(1.5);
+  font-size: rem(27);
+  text-align: left;
+  position: relative;
+}
+.c-btn::before{
+  position: absolute;
+  content: '';
+  top: 40%;
+  right: rem(70);
+  width: rem(47);
+  height: rem(8);
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: skew(45deg);
+}

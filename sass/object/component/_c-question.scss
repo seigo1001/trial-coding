@@ -1,0 +1,12 @@
+.c-question{
+    display: flex;
+    align-items: center;
+    background: $white;
+    padding-left: rem(10);
+    padding-top: rem(12);
+    padding-bottom: rem(18);
+    position: relative;
+    @include mq(tab){
+        padding-left: rem(30);
+    }
+}
